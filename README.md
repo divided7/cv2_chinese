@@ -1,6 +1,7 @@
 # cv2_chinese
 以下demo能直接替换cv2.putText,
 插入函数后,将原本的代码 `cv2.putText(img, ...)` 替换为 `img = putText(img, ...)`
+注：在putText函数中有个font参数需要实际按需修改，linux可输入`fc-list :lang=zh`查看本机支持的中文字体
 
 ```python
 import cv2
