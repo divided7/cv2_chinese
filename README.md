@@ -10,6 +10,7 @@ from PIL import Image, ImageDraw, ImageFont
 
 
 def putText(img, text, position, ziti, font_size, color, cuxi, aa):
+    color = color[::-1]
     # 将OpenCV图像转换为Pillow图像
     font_size = int(font_size*35)
     position = (position[0], position[1] - 25)
